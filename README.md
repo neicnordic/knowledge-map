@@ -4,6 +4,8 @@
 
 Find and connect people who would like to share knowledge/skills or would like to learn something.
 
+Example: https://neicnordic.github.io/knowledge-map/
+
 
 ## This is a mashup of great libraries
 
