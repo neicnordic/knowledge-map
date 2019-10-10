@@ -1,0 +1,172 @@
+Disclaimer: This is my first try to categorize skills, it might be too detailed.
+
+-------------
+User skill levels
+
+1. Basic: User has the skill / can use the service
+2. Advanced: User knows how the service works
+3. Maintainer: User knows how to change the configuration of the service
+4. Developer: User can change the inner workings of the service
+
+For discussion:
+0. Interested: User would like to learn this skill
+5. Teaching/Professional: User can bring another user one level up
+6. User would like to hire someone with this skill 
+
+---------------
+
+
+
+* Computing
+** Algorithms
+*** Numeric
+*** Neural Network / AI
+**** machine learning
+***** Lean AI
+** Hardware -> Facility
+*** Interconnect -> Network Physical Layer
+*** calculation performance
+*** energy needs
+**** electricity needs -> Facility
+**** cooling needs -> Facility
+** Software
+*** Bootloader (may be tied to hardware)
+*** OS
+*** Software management (install etc)
+**** Version management
+***** cvs
+***** git
+*** Application software
+**** Compiler
+***** Compiler programming
+***** gcc
+***** ifort
+**** Programming environments
+***** R
+***** Jupyter
+***** MATLAB
+**** Programming languages
+***** C++
+***** Fortran
+***** Julia
+***** python
+***** perl
+**** Optimization
+**** Debugging
+
+* Storage
+** Hardware -> Facility
+*** SAN -> Network Physical Layer
+*** Storage media
+** Software
+*** OS
+*** File system
+*** Server/client storage software
+**** iRods
+
+* Facility
+** Rent/buy/leach
+*** Computer room
+*** Electrical supply
+**** Cabling
+*** Cooling supply
+**** Cabling
+**** Piping
+
+* User management
+** Identification (required ID to get access)
+*** Database for personal data
+*** Law room personal data
+** Authentication (method(s))
+*** Database for authentication
+** Authorization (linking ID to service(s))
+*** Database for authorization
+** User account creation routines
+** User account termination routines
+** Group management (example SUPR)
+
+* Services
+** Command line
+*** bash
+**** awk
+**** make
+**** cmake
+** GUI
+*** Web
+*** Remote desktop
+** Application specific protocol
+*** FTP
+** Batch system
+*** SLURM
+** Service accounting and logging
+
+* Cloud
+** Cloud platforms
+*** AWS
+*** GCP
+** Cloud services
+*** OpenShift Dedicated
+*** Google App Engine
+
+
+* Virtualization
+** HW
+*** VMWare ESXi
+*** QEMU
+** HW assisted
+*** KVM
+*** Xen
+**** Openstack Compute Nova
+*** Parallels (Mac)
+** Paravirtualization
+*** Sun/Oracle virtual domains
+** OS level
+*** FreeBSD jail
+*** Docker
+**** OpenShift
+
+
+* Network
+** Physical layer -> Facility
+*** Ethernet
+*** WiFi
+**** WiFi auth
+*** High speed interconnect
+**** Infiniband
+** IP LAN
+*** LAN Infrastructure
+**** DHCP
+**** NTP
+**** LAN Routing
+**** NAT
+** IP WAN
+*** Connection Internet
+**** IP Address block
+**** WAN Routing
+***** AS
+***** BGP
+
+*Procurement 
+
+
+* Management
+** Project Steering
+*** PPS
+*** PMI PMP
+*** Scrum Master
+
+* Communication
+** wiki
+** webServer
+**** Kafka
+** Social Media
+*** LinkedIn
+*** FaceBook
+*** Twitter
+*** Instagram
+** VoIP and chat
+*** discord
+*** RocketChat
+*** Slack
+*** zoom
+
