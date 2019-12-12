@@ -1,17 +1,18 @@
-Disclaimer: This is my first try to categorize skills, it might be too detailed.
+Disclaimer: This might still be too detailed.
+
+Reminder: The idea is to only keep track of skills that are currently "active." Therfore as a rule of thumb you shouldn't typically want to choose more than five different skills. Bragging is to be done elsewhere.
+
 
 -------------
-User skill levels
+User skill interests
 
-1. Basic: User has the skill / can use the service
-2. Advanced: User knows how the service works
-3. Maintainer: User knows how to change the configuration of the service
-4. Developer: User can change the inner workings of the service
+0 User would like to learn this skill
+1 Basic: User is currently learning this skill
+2 Advanced (default): User is currently improving on this skill
+3 Teaching: User is willing to help someone else to learn and improve on this skill
+4 Contributor: User actively contributes to the service or maintains an instance of it
 
-For discussion:
-0. Interested: User would like to learn this skill
-5. Teaching/Professional: User can bring another user one level up
-6. User would like to hire someone with this skill 
+(6 User would like to hire someone with this competence)
 
 ---------------
 
@@ -23,12 +24,7 @@ For discussion:
 *** Neural Network / AI
 **** machine learning
 ***** Lean AI
-** Hardware -> Facility
-*** Interconnect -> Network Physical Layer
 *** calculation performance
-*** energy needs
-**** electricity needs -> Facility
-**** cooling needs -> Facility
 ** Software
 *** Bootloader (may be tied to hardware)
 *** OS
@@ -55,8 +51,6 @@ For discussion:
 **** Debugging
 
 * Storage
-** Hardware -> Facility
-*** SAN -> Network Physical Layer
 *** Storage media
 ** Software
 *** OS
@@ -65,13 +59,17 @@ For discussion:
 **** iRods
 
 * Facility
-** Rent/buy/leach
+** Procurement/rent/leach
 *** Computer room
 *** Electrical supply
 **** Cabling
 *** Cooling supply
 **** Cabling
 **** Piping
+*** energy needs
+*** torage hardware
+*** Computing hardware
+
 
 * User management
 ** Identification (required ID to get access)
@@ -146,7 +144,6 @@ For discussion:
 ***** AS
 ***** BGP
 
-*Procurement 
 
 
 * Management
