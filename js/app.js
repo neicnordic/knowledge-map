@@ -50,6 +50,7 @@ function extract_skills(persons) {
 var app = new Vue({
     el: '#app',
     data: {
+	skill_categories: {},
 	persons_found: [],
         skills_input: "",
         skills_all: [],
@@ -103,14 +104,16 @@ var app = new Vue({
 	    /*Finding the people with these skills and setting the poin on the map */
 	    options = {
                 threshold: 0.2,
-		keys: ['skills.prog_lang','skills.skilltype2']
+		/*This is clumsy, must allocate dynamically */
+		keys: ['skills.prog_lang','skills.management','skills.cloud','skills.user_mgt','skills.network']
             }
 	    this.persons_found = [];
             var fuse = new Fuse(this.persons, options);
             var persons_found = fuse.search(val);
+	    //console.log(JSON.stringify(persons_found))
 	    for (let idx in persons_found){
 		//console.log('This person found is ', JSON.stringify(this.persons[idx].name))
-		this.persons_found.push(this.persons[idx].name)
+		this.persons_found.push(persons_found[idx].name)
 	    }
             if (this.markers != null) {
                 this.map.removeLayer(this.markers);
@@ -131,7 +134,19 @@ var app = new Vue({
                 _this.skills_all = [extract_skills(_this.persons)];
                 _this.map = draw_map();
                 _this.data_is_loaded = true;
-		_this.skill_categories = Object.keys(_this.skills_all);
+
+		_this.skill_categories = {'prog_lang':'Programming languages',
+					  'user_mgt':'User management',
+					  'storage':'Storage',
+					  'facility':'Facility',
+					  'network':'Network',
+					  'cloud':'Cloud',
+					  'management':'Management'
+					  
+
+
+		}
+
             })
 
         // delay updating by 200 ms to prevent it from computing "while typing"
