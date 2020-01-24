@@ -8,9 +8,10 @@ persons:
          - python
          - c++
          - someprog 
-      - skilltype2:
+      - management:
          - pps
-         - cmake
+      - user_mgt:
+         - authentication
   - name: Steve Brule
     url: http://example.org
     lat: 69.6798
@@ -20,9 +21,9 @@ persons:
          - python
          - csharp
          - fortran
-      - skilltype2:
-         - pps
-         - cmake
+      - cloud:
+         - oracle
+         - openstack
   - name: Bobson Dugnutt
     url: http://example.org
     lat: 60.178511
@@ -30,9 +31,8 @@ persons:
     skills:
       - prog_lang:
          - perl
-      - skilltype2:
-         - pps
-         - cmake
+      - network:
+         - infiniband
   - name: Kilgore Trout
     url: http://example.org
     lat: 59.94347
@@ -40,6 +40,6 @@ persons:
     skills:
       - prog_lang:
          - lisp
-      - skilltype2:
+      - management:
          - pps
-         - cmake
+         - scrum

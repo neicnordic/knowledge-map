@@ -60,49 +60,29 @@
                   <div class="form-group">
                     <label class="col-form-label" for="skills_input">Find people who know about ...</label>
                     <input id="skills_input" v-model="skills_input" type="text" class="form-control" placeholder="keyword">
-		    <!--Skill-categories: {{skill_categories}}<br>-->
-
-		    <!--{{skills_found}}-->
 		    <div v-if="hit">
-		    <br>Skills found:
-		    <span v-for="key in Object.keys(skills_found)" style="margin-right: 5px;">
-		      <div v-if="skills_found[key].length > 0">
-
-		      <br>{{ key }}:
-		      <span v-for="skill in Object.values(skills_found[key])" class="badge badge-primary" style="margin-right: 5px;">{{ skill }}</span>
-		      </div>
-		    </span>
-
-		    
-		   <!-- <span v-for="skill_cat in skill_categories" style="margin-right: 5px;"><br>{{ skill_cat }}: -->
-		   <!--<span v-for="skill in skills_all[skill_cat]" class="badge badge-primary" style="margin-right: 5px;">{{ skill }}</span>-->
-		    </span>
-		    <!--Skills all: {{skills_all[skill_categories[0]]}}<br>
-		    Skills all: {{skills_all[skill_categories[1]]}}<br>-->
-		    <!-- <span v-for="skill_cat in skill_categories" class="badge badge-primary" style="margin-right: 5px;">{{ skill_cat }}</span>-->
-		    <br>Persons found: {{ persons_found}}
+		      <br><b>Skills found</b>:
+		      <span v-for="key in Object.keys(skills_found)">
+			<div v-if="skills_found[key].length > 0"> {{skill_categories[key]}}:
+			  <span v-for="skill in Object.values(skills_found[key])" class="badge badge-primary" style="margin-right: 5px;">{{ skill }}</span>
+		    	</div>
+		      </span>
+		      <b>Persons found:</b><br>{{persons_found}}
 		    </div>
                   </div>
                 </div>
-            </div> <!-- row -->
-          </div>
-
+              </div> 
+            </div><!-- row -->
+	  </div>
+	  
           <div v-if="data_is_loaded">
             <div class="row top-buffer">
               <div class="col-md-12">
-               <div v-if="skills_found.length > 0">
-                  <br>
-                  found the keywords:
-                  <span v-for="skill in skills_found" class="badge badge-primary" style="margin-right: 5px;">{{ skill }}</span>
-              </div>
                 <div v-if="skills_all.length > 0">
                   <br>
-                  All skills:
-		  <span v-for="key in Object.keys(skills_all[0])" style="margin-right: 5px;"><br>{{ key }}:
-                  <span v-for="skill in Object.values(skills_all[0][key])" class="badge badge-primary" style="margin-right: 5px;">{{ skill }}</span>
-		  </span>
-
-		  
+                  <b>All skills:</b>
+		  <span v-for="key in Object.keys(skills_all[0])" style="margin-right: 5px;"><br>{{ skill_categories[key] }}:
+                  <span v-for="skill in Object.values(skills_all[0][key])" class="badge badge-primary" style="margin-right: 5px;">{{ skill }}</span></span>
                 </div>
               </div>
             </div> <!-- row -->
