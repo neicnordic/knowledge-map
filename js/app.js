@@ -1,14 +1,5 @@
 'use strict';
 
-/*
-const jsyaml = require('js-yaml');
-const _ = require('lodash');
-//const L = require('leaflet');
-const axios = require('axios');
-const Vue = require('vue');
-const Fuse = require('fuse');
-*/
-
 function draw_map() {
     var _map = L.map('mapid').setView([64.0, 2.0], 4);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {}).addTo(_map);
