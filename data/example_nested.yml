@@ -1,0 +1,45 @@
+persons:
+  - name: John Doe
+    url: http://example.org
+    lat: 55.715043
+    lon: 13.212401
+    skills:
+      - prog_lang:
+         - python
+         - c++
+         - someprog 
+      - skilltype2:
+         - pps
+         - cmake
+  - name: Steve Brule
+    url: http://example.org
+    lat: 69.6798
+    lon: 18.9710
+    skills:
+      - prog_lang:
+         - python
+         - csharp
+         - fortran
+      - skilltype2:
+         - pps
+         - cmake
+  - name: Bobson Dugnutt
+    url: http://example.org
+    lat: 60.178511
+    lon: 24.833543
+    skills:
+      - prog_lang:
+         - perl
+      - skilltype2:
+         - pps
+         - cmake
+  - name: Kilgore Trout
+    url: http://example.org
+    lat: 59.94347
+    lon: 10.718161
+    skills:
+      - prog_lang:
+         - lisp
+      - skilltype2:
+         - pps
+         - cmake
